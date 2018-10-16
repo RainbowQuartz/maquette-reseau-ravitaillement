@@ -1,46 +1,108 @@
-<div class="jumbotron main-jumbotron">
-  <div class="container">
-    <div class="content">
-      <h1>Site d'informations du réseau de ravitaillement des luttes</h1>
-      <p class="margin-bottom">Sous-titre ici</p>
+<!-- Carousel Banner -->
+<div id="carousel-home" class="carousel slide carousel-fullscreen carousel-fade" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li class="" data-target="#carousel-home" data-slide-to="0"></li>
+    <li class="active" data-target="#carousel-home" data-slide-to="1"></li>
+    <li class="" data-target="#carousel-home" data-slide-to="2"></li>
+  </ol>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active" style="background-image: url('app/assets/images/image1.jpg');">
+      <div class="overlay"></div>
+      <div class="carousel-caption">
+        <h1 class="super-heading">Réseau de Ravitaillement des luttes</h1>
+        <p class="super-paragraph">Sous-titre</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url('../../assets/images/image2.jpg');">
+      <div class="overlay"></div>
+      <div class="carousel-caption">
+        <h1 class="super-heading">Réseau de Ravitaillement des luttes</h1>
+        <p class="super-paragraph">Sous-titre</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url('../../assets/images/image3.jpg');">
+      <div class="overlay"></div>
+      <div class="carousel-caption">
+        <h1 class="super-heading">Réseau de Ravitaillement des luttes</h1>
+        <p class="super-paragraph">Sous-titre</p>
+      </div>
     </div>
   </div>
 </div>
-<section>
+<!-- articles.last do -->
+<!-- Article le plus récent -->
+<section class="background-grey-lightest negative-margin">
   <div class="container">
-    <h2>Titre 1</h2>
-    <p class="lead">
-      Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat.
-    </p>
-    <p>
-      Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
-    </p>
-    <p>
-      <a href="" class="btn btn-ghost">Lire la suite</a>
-    </p>
-  </div>
-  <div class="container">
-    <h2>Titre 2</h2>
-    <p class="lead">
-      Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat.
-    </p>
-    <p>
-      Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
-    </p>
-    <p>
-      <a href="" class="btn btn-ghost">Lire la suite</a>
-    </p>
-  </div>
-  <div class="container">
-    <h2>Titre 3</h2>
-    <p class="lead">
-      Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat.
-    </p>
-    <p>
-      Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
-    </p>
+    <h1>Article le plus récent</h1>
+    <p class="lead">Texte d'accroche de l'article</p>
     <p>
       <a href="" class="btn btn-ghost">Lire la suite</a>
     </p>
   </div>
 </section>
+<!-- end -->
+<!-- articles moins récents -->
+<!-- articles.each do -->
+<section class="section--padding-bottom-small">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="post">
+          <div class="image">
+            <a href="">
+              <img class="img-responsive" src="../../assets/images/image1" alt="">
+            </a>
+          </div>
+          <h3>
+            <a href="">Titre de l'article</a>
+          </h3>
+          <p class="post__intro">
+            ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+          </p>
+          <p class="read-more">
+            <a class="btn btn-ghost" href="">Lire la suite</a>
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="post">
+          <div class="image">
+            <a href="">
+              <img class="img-responsive" src="../../assets/images/image1" alt="">
+            </a>
+          </div>
+          <h3>
+            <a href="">Titre de l'article</a>
+          </h3>
+          <p class="post__intro">
+            ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+          </p>
+          <p class="read-more">
+            <a class="btn btn-ghost" href="">Lire la suite</a>
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="post">
+          <div class="image">
+            <a href="">
+              <img class="img-responsive" src="../../assets/images/image1" alt="">
+            </a>
+          </div>
+          <h3>
+            <a href="">Titre de l'article</a>
+          </h3>
+          <p class="post__intro">
+            ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+          </p>
+          <p class="read-more">
+            <a class="btn btn-ghost" href="">Lire la suite</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end -->
