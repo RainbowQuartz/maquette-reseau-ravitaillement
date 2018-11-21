@@ -1,6 +1,6 @@
 $(function () {
 
-    lightbox();
+    // lightbox();
     menuSliding();
     utils();
     map();
@@ -384,13 +384,13 @@ $.fn.alignElementsSameHeight = function () {
     });
 }
 
-$(window).load(function () {
+/* $(window).load(function () {
 
     windowWidth = $(window).width();
 
     $(this).alignElementsSameHeight();
 
-});
+}); 
 $(window).resize(function () {
 
     newWindowWidth = $(window).width();
@@ -402,4 +402,4 @@ $(window).resize(function () {
         windowWidth = newWindowWidth;
     }
 
-});
+}); */

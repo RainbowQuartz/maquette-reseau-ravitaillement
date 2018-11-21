@@ -44,10 +44,10 @@
 </section>
 <!-- end -->
 <!-- articles moins récents -->
-<!-- articles.each do -->
 <section class="section--padding-bottom-small">
   <div class="container">
     <div class="row">
+      <% Article.all.each do |article| %>
       <div class="col-sm-6">
         <div class="post">
           <div class="image">
@@ -56,53 +56,18 @@
             </a>
           </div>
           <h3>
-            <a href="">Titre de l'article</a>
+            <%= article.title %>
           </h3>
           <p class="post__intro">
-            ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+            <%= article.body %>
           </p>
           <p class="read-more">
             <a class="btn btn-ghost" href="">Lire la suite</a>
           </p>
         </div>
       </div>
-      <div class="col-sm-6">
-        <div class="post">
-          <div class="image">
-            <a href="">
-              <img class="img-responsive" src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/43582715_299480880651256_1932601288810299392_n.jpg?_nc_cat=101&_nc_ht=scontent-cdg2-1.xx&oh=9d58fe8d9578560c19e7bfca2c930155&oe=5C417C56" alt="">
-            </a>
-          </div>
-          <h3>
-            <a href="">Titre de l'article</a>
-          </h3>
-          <p class="post__intro">
-            ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
-          </p>
-          <p class="read-more">
-            <a class="btn btn-ghost" href="">Lire la suite</a>
-          </p>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="post">
-          <div class="image">
-            <a href="">
-              <img class="img-responsive" src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/42992925_297389120860432_3556008229873909760_n.jpg?_nc_cat=106&_nc_ht=scontent-cdg2-1.xx&oh=a309149ec2c16ccba6754c65782bf974&oe=5C6339CC" alt="">
-            </a>
-          </div>
-          <h3>
-            <a href="">Titre de l'article</a>
-          </h3>
-          <p class="post__intro">
-            ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
-          </p>
-          <p class="read-more">
-            <a class="btn btn-ghost" href="">Lire la suite</a>
-          </p>
-        </div>
-      </div>
+      <% end %>
     </div>
   </div>
 </section>
-<!-- end -->
+
